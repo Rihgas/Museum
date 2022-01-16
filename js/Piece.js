@@ -19,10 +19,4 @@ class Piece{
     setDescription( description ){
         this.description = description
     }  
-
-    sayMyPriceAsPiece( price ){
-        return "Soy un Videojuego muy caro..." +
-        " cuesto alrededor de " + price;
-    }
-
 }

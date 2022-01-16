@@ -40,12 +40,45 @@ function welcome(){
 function discoverTopFive(){
     document.getElementById("topFive").src = 
     piece1.image;
-    document.getElementById("descriptionTopFive").innerHTML =
-    piece1.description;
+    alert(piece1.description);
 }
 
+function dragStart(event){
+    event.dataTransfer.setData("Text", event.target.id);
+}
+  
+function dragging(event){
+    document.getElementById("demo").innerHTML = "The p element is being dragged";
+}
+  
+function allowDrop(event){
+    event.preventDefault();
+}
+  
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+    document.getElementById("demo").innerHTML = "The p element was dropped";
+    document.getElementById("topFour").src = piece2.image;
+    alert(piece2.description)
+}
 
+function discoverTopThree(x) {
+    x.style.background = "#EBE645";
+    document.getElementById("topThree").src = piece3.image;
+    document.getElementById("demo2").innerHTML = piece3.description;
+}
 
+function discoverTopTwo() {
+    alert(piece4.description);
+    document.getElementById("topTwo").src = piece4.image;
+}
+
+function discoverTopOne(){
+    document.getElementById("demo3").innerHTML = piece5.description;
+    document.getElementById("topOne").src = piece5.image;
+}
 
 
 
