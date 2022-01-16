@@ -22,7 +22,7 @@ class Piece{
 
     sayMyPriceAsPiece( price ){
         return "Soy un Videojuego muy caro..." +
-        " Cuesto alrededor de " + price;
+        " cuesto alrededor de " + price;
     }
 
 }

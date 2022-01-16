@@ -23,12 +23,27 @@ let piece5 = new Piece(
     "Gamma Attack (Atari 2600). Precio: $20.000 - $500.000 USD (18.000 - 460.000 euros). Este es, sin lugar a dudas, el videojuego mas raro jamás creado. La compañía Gammaton solo creó un cartucho, y el dueño actual es el coleccionista Anthony DeNardo, quien ha puesto el juego a la venta en eBay con un precio inicial de $500,000 USD. ¡Medio millón de dólares!"
 );
         
-let museum = new Museum( [piece1, piece2, piece3, piece4, piece5] );
+let museum = new Museum( 
+    [piece1, 
+     piece2, 
+     piece3, 
+     piece4, 
+     piece5
+    ] 
+);
         
 function welcome(){
-    document.getElementById("presentationMuseum").innerHTML = museum.sayWelcomeAsMuseum();
+    document.getElementById("presentationMuseum").innerHTML = 
+    museum.sayWelcomeAsMuseum();
 }
-        
+
+function discoverTopFive(){
+    document.getElementById("topFive").src = 
+    piece1.image;
+    document.getElementById("descriptionTopFive").innerHTML =
+    piece1.description;
+}
+
 
 
 
