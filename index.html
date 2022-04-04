@@ -1,74 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="/js/Museum.js"></script>
-    <script src="/js/Piece.js"></script>
-    <title>Museum</title>
-</head>
-<body>
-    <header>
-        <div class="imageTitle">
-            <h1>Bienvenido al Museo de los Videojuegos</h1>
-        </div>
-        <div class="centerButton">
-            <button onclick="welcome()">Descubrelo</button>
-        </div>
-        <h2 id="presentationMuseum"></h2>
-    </header>
-    
-    
-    <div class="mainImage">
-        <img src="/img/NationalVideogameMuseum1.jpg" alt="Videogame Museum">
-    </div>
-    
-    <h3>Exposicion de Videojuegos mas caros del mundo</h3>  
 
-    <div id="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="icon" href="/img/icon.png">
+        <script src="/js/Museum.js"></script>
+        <script src="/js/Piece.js"></script>
+        <title>Museum</title>
+    </head>
 
-        <h4>Haz doble click en esta imagen para descubrir el puesto numero 5</h3>
-        <section class="item-1" ondblclick="discoverTopFive()">
-            <img src="img/real-Cover-Card.jpg" id="topFive" alt="Videogame top 5">
-        </section>
-        <p id="descriptionTopFive"></p>
-
-        <h4>Mueve la frase "DRAG ME" de un recuadro al otro para descubrir el puesto numero 4</h4>
-        <section class="item-2">
-            <img src="img/real-Cover-Card.jpg" id="topFour" alt="Videogame top 4">
-        </section>
-        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
-        </div>
-        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <p id="demo"></p>
-
-        <h4>Haz click a la barra para descucbrir el puesto numero 3</h4>
-        <section class="item-3">
-            <img src="img/real-Cover-Card.jpg" id="topThree" alt="Videogame top 3">
-        </section>
-        <p>Enter any text: </p><input type="text" class="inputTextEvent" onfocus="discoverTopThree(this)">   
-        <p id="demo2"></p>
-
-        <h4>Escribe cualquier cosa en la barra para descubrir el puesto numero 2</h4>
-        <section class="item-4">
-            <img src="img/real-Cover-Card.jpg" id="topTwo" alt="Videogame top 2">
-        </section>
-        <input type="text" onkeypress="discoverTopTwo()">
-        
-
-        <h4>Pasa elMouse por encima de la imagen para descubrir el puesto numero 1</h4>
-        <section class="item-5">
-            <div onmousemove="discoverTopOne()" onmouseout="clearCoor()">
-                <img src="img/real-Cover-Card.jpg" id="topOne" alt="Videogame top 1">
+    <body>
+        <header>
+            <h1 class="animate__animated animate__backInDown">Bienvenido al Museo de los Videojuegos</h1>
+            
+            <div class="centerButton">
+                <button onclick="welcome()">Descubrelo</button>
             </div>
-        </section>
-        <p id="demo3"></p>
+            <h2 id="presentationMuseum"></h2>
+        </header>
 
-    </div>
-        
-    <script src="/js/index.js"></script>
-</body>
+
+        <div class="mainImage">
+            <img src="/img/NationalVideogameMuseum1.jpg" alt="Videogame Museum">
+        </div>
+
+        <h3>Exposicion de Videojuegos mas caros del mundo</h3>
+
+        <div id="container">
+
+            <h4>Haz doble click en esta imagen para descubrir el puesto numero 5</h3>
+            <section class="item-1" ondblclick="discoverTopFive()">
+                <img src="img/cartaIcon1.png" id="topFive" alt="Videogame
+                    top 5">
+            </section>
+            <p id="descriptionTopFive"></p>
+
+
+            <h4>Mueve la frase "DRAG ME" de un recuadro al otro para descubrir
+                el puesto numero 4</h4>
+            <section class="item-2">
+                <img src="img/cartaIcon1.png" id="topFour" alt="Videogame
+                    top 4">
+            </section>
+            <div class="droptarget" ondrop="drop(event)"
+                ondragover="allowDrop(event)">
+                <p ondragstart="dragStart(event)" ondrag="dragging(event)"
+                    draggable="true" id="dragtarget">Drag me!</p>
+            </div>
+            <div class="droptarget" ondrop="drop(event)"
+                ondragover="allowDrop(event)"></div>
+            <p id="demo"></p>
+
+
+            <h4>Haz click a la barra para descucbrir el puesto numero 3</h4>
+            <section class="item-3">
+                <img src="img/cartaIcon1.png" id="topThree" alt="Videogame
+                    top 3">
+            </section>
+            <input type="text" class="inputTextEvent"
+                onfocus="discoverTopThree(this)">
+
+
+            <h4>Escribe cualquier cosa en la barra para descubrir el puesto
+                numero 2</h4>
+            <section class="item-4">
+                <img src="img/cartaIcon1.png" id="topTwo" alt="Videogame
+                    top 2">
+            </section>
+            <p>Enter any text: </p><input type="text" class="inputTextEvent2"
+                onkeypress="discoverTopTwo(this)">
+
+
+            <h4>Pasa elMouse por encima de la imagen para descubrir el puesto
+                numero 1</h4>
+            <section class="item-5">
+                <div onmousemove="discoverTopOne()" onmouseout="clearCoor()">
+                    <img src="img/cartaIcon1.png" id="topOne"
+                        alt="Videogame top 1">
+                </div>
+            </section>
+            <p id="demo3"></p>
+
+        </div>
+
+        <script src="/js/index.js"></script>
+    </body>
+
 </html>

@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+header{
+    padding-bottom: 20vh;
 }
 
 header h1{
@@ -23,15 +29,17 @@ h3{
 }
 
 .imageTitle{
-    background-image: url(https://4.bp.blogspot.com/-HXrYYzM-kcY/W_vCw4YElPI/AAAAAAAAA1g/u2A_aAMXFm4lwrgh5r0YQcUmdbnYt3UVwCLcBGAs/s1600/Sin%2Bt%25C3%25ADtulo-3.jpg);
-    background-position: top;
-    background-size: 20%;
-    background-repeat: space;
+    background-image: url();
+    background-position: center;
+    background-size: 90vw;
+    background-repeat: no-repeat;
     margin-top: 40px;
     text-shadow: 1px  0px 0px black,
                  0px  1px 0px black,
                 -1px  0px 0px black,
                  0px -1px 0px black;
+    width: 90vw;
+    height: 22vh;             
 }
 
 .centerButton{
@@ -48,6 +56,9 @@ h3{
 
 body{
     background-color: #000957;
+    background-image: url('https://media.redadn.es/imagenes/articulos_119378.jpg');
+    background-repeat: repeat-y;
+    background-size: 100vw;
     image-resolution: 1000px;
 }
 
@@ -66,9 +77,11 @@ body{
     padding-bottom: 10px;
     padding-top: 100px;
 }
+
 #container img{
     width: 500px;
     height: 800px;
+    border-radius: 50px;
 }
 
 #container{
@@ -81,6 +94,10 @@ body{
     padding-bottom: 20px;
 }
 
+#container input{
+    margin-top: 15px;
+}
+
 .droptarget{
     float: left; 
     width: 100px; 
@@ -88,8 +105,15 @@ body{
     margin: 15px;
     padding: 10px;
     border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    background-color: #EBE645;
+    color: #000957;
 }
 
 .inputTextEvent{
+    border-radius: 20px;
+}
+
+.inputTextEvent2{
     border-radius: 20px;
 }

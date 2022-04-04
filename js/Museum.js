@@ -16,7 +16,6 @@ class Museum{
         "Disfruta la experiencia de interactuar con un total de " +
         this.pieces.length +
         " piezas de arte." +
-        "Quieres descurbrir como funcionan? Ve abajo y averigualo!!!";
-    
+        " Quieres descurbrir como funcionan? Ve abajo y averigualo!!!";
     }
 }    
