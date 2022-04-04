@@ -7,8 +7,8 @@
     font-family: 'Merriweather', serif;
 }
 
-header{
-    padding-bottom: 20vh;
+a{
+    text-decoration: none;
 }
 
 header h1{
@@ -18,14 +18,18 @@ header h1{
     color: #EBE645;
 }
 
-header h2{
+h2{
+    font-family: 'Merriweather', serif;
+    font-size: 5vh;
     padding-bottom: 20px;
 }
 
 h3{
+    font-size: 10vh;
     text-align: center;
     color: #EBE645;
     padding-top: 100px;
+    font-family: 'Merriweather', serif;
 }
 
 .imageTitle{
@@ -117,3 +121,7 @@ body{
 .inputTextEvent2{
     border-radius: 20px;
 }
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
+  }

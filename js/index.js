@@ -28,20 +28,20 @@ let museum = new Museum( [piece1, piece2, piece3, piece4, piece5] );
 function welcome(){
     document.getElementById("presentationMuseum").innerHTML = 
     museum.sayWelcomeAsMuseum();
+    const element = document.querySelector('#presentationMuseum');
+    element.classList.add('animate__animated', 'animate__fadeIn');
 };
 
 function discoverTopFive(){
     document.getElementById("topFive").src = 
     piece1.image;
     alert(piece1.description);
+    const element = document.querySelector('#topFive');
+    element.classList.add('animate__animated', 'animate__fadeIn');
 };
 
 function dragStart(event){
     event.dataTransfer.setData("Text", event.target.id);
-};
-  
-function dragging(event){
-    document.getElementById("demo").innerHTML = "The p element is being dragged";
 };
   
 function allowDrop(event){
@@ -52,9 +52,11 @@ function drop(event){
     event.preventDefault();
     var data = event.dataTransfer.getData("Text");
     event.target.appendChild(document.getElementById(data));
-    document.getElementById("demo").innerHTML = "The p element was dropped";
     document.getElementById("topFour").src = piece2.image;
     alert(piece2.description);
+    const element = document.querySelector('#topFour');
+    element.classList.add('animate__animated', 'animate__fadeIn');
+
 };
 
 function discoverTopThree(x){
@@ -62,18 +64,23 @@ function discoverTopThree(x){
     text = piece3.description;
     alert(text);
     document.getElementById("topThree").src = piece3.image;
-    
+    const element = document.querySelector('#topThree');
+    element.classList.add('animate__animated', 'animate__fadeIn');
 };
 
 function discoverTopTwo(x){
     x.style.background = "#EBE645";
     alert(piece4.description);
     document.getElementById("topTwo").src = piece4.image;
+    const element = document.querySelector('#topTwo');
+    element.classList.add('animate__animated', 'animate__fadeIn');
 };
 
 function discoverTopOne(){
     alert(piece5.description);
     document.getElementById("topOne").src = piece5.image;
+    const element = document.querySelector('#topOne');
+    element.classList.add('animate__animated', 'animate__fadeIn');
 };
 
 

@@ -20,19 +20,22 @@
             <h1 class="animate__animated animate__backInDown">Bienvenido al Museo de los Videojuegos</h1>
             
             <div class="centerButton">
-                <button onclick="welcome()">Descubrelo</button>
+                <a href="#anchor"><button onclick="welcome()">Descubrelo</button></a>
             </div>
-            <h2 id="presentationMuseum"></h2>
         </header>
-
-
-        <div class="mainImage">
+        
+        
+        <div class="mainImage animate__animated animate__fadeIn">
             <img src="/img/NationalVideogameMuseum1.jpg" alt="Videogame Museum">
         </div>
-
-        <h3>Exposicion de Videojuegos mas caros del mundo</h3>
-
+        
+        <div>
+            <a name="anchor"></a>
+            <h2 id="presentationMuseum"></h2>
+        </div>
+        
         <div id="container">
+            <h3>Exposicion de Videojuegos mas caros del mundo</h3>
 
             <h4>Haz doble click en esta imagen para descubrir el puesto numero 5</h3>
             <section class="item-1" ondblclick="discoverTopFive()">
@@ -74,7 +77,7 @@
                 <img src="img/cartaIcon1.png" id="topTwo" alt="Videogame
                     top 2">
             </section>
-            <p>Enter any text: </p><input type="text" class="inputTextEvent2"
+            <input type="text" class="inputTextEvent2"
                 onkeypress="discoverTopTwo(this)">
 
 
