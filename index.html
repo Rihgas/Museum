@@ -58,13 +58,14 @@
             <p id="demo"></p>
 
 
-            <h4>Haz click a la barra para descucbrir el puesto numero 3</h4>
+            <h4>Haz click a la barra y mantén presionada cualquier tecla para descubrir el puesto numero 3</h4>
             <section class="item-3">
                 <img src="img/cartaIcon1.png" id="topThree" alt="Videogame
                     top 3">
             </section>
             <input type="text" class="inputTextEvent"
-                onfocus="discoverTopThree(this)">
+                onkeydown="discoverTopThree(this)">
+            <p class="topThree"></p>
 
 
             <h4>Escribe cualquier cosa en la barra para descubrir el puesto
@@ -77,7 +78,7 @@
                 onkeypress="discoverTopTwo(this)">
 
 
-            <h4>Pasa elMouse por encima de la imagen para descubrir el puesto
+            <h4>Pasa el Mouse por encima de la imagen para descubrir el puesto
                 numero 1</h4>
             <section class="item-5">
                 <div onmousemove="discoverTopOne()" onmouseout="clearCoor()">

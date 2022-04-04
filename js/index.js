@@ -59,8 +59,10 @@ function drop(event){
 
 function discoverTopThree(x){
     x.style.background = "#EBE645";
-    alert(piece3.description);
+    text = piece3.description;
+    alert(text);
     document.getElementById("topThree").src = piece3.image;
+    
 };
 
 function discoverTopTwo(x){
