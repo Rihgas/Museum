@@ -60,7 +60,7 @@ function drop(event){
 };
 
 function discoverTopThree(x){
-    x.style.background = "#EBE645";
+    x.style.background = "transparent";
     text = piece3.description;
     alert(text);
     document.getElementById("topThree").src = piece3.image;
@@ -69,7 +69,7 @@ function discoverTopThree(x){
 };
 
 function discoverTopTwo(x){
-    x.style.background = "#EBE645";
+    x.style.background = "transparent";
     alert(piece4.description);
     document.getElementById("topTwo").src = piece4.image;
     const element = document.querySelector('#topTwo');
