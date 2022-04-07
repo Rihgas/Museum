@@ -83,5 +83,22 @@ function discoverTopOne(){
     element.classList.add('animate__animated', 'animate__fadeIn');
 };
 
+/* Animation on scroll */
+
+let animated = document.querySelectorAll(".animated");
+
+function showScroll() {
+  let scrollTop = document.documentElement.scrollTop;
+  for (let i=0; i<animated.length; i++) {
+    let heightAnimated = animated[i].offsetTop;
+    if(heightAnimated - 200 < scrollTop) {
+      animated[i].style.opacity = 1;
+      animated[i].classList.add("showFromRight");
+    }
+  }
+}
+
+window.addEventListener('scroll', showScroll);
+
 
 

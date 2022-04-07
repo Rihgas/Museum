@@ -98,14 +98,16 @@ body{
     background: linear-gradient(to bottom right, orange, yellow);
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
-    padding-bottom: 10px;
-    padding-top: 100px;
+    font-size: 3vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
 }
 
 #container img{
     width: 500px;
-    height: 800px;
-    border-radius: 50px;
+    height: 700px;
+    border-radius: 55px;
+    margin-top: 20vh;
 }
 
 #container{
@@ -146,6 +148,24 @@ body{
     border-radius: 20px;
 }
 
-.animate__animated.animate__fadeIn {
+.animate__animated.animate__fadeIn{
     --animate-duration: 3s;
-  }
+}
+
+.animated{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.showFromRight{
+    animation: showFromRight 1s;
+}
+
+@keyframes showFromRight{
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

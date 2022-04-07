@@ -7,8 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
         <link rel="icon" href="/img/icon.png">
         <script src="/js/Museum.js"></script>
         <script src="/js/Piece.js"></script>
@@ -17,37 +17,36 @@
 
     <body>
         <header>
-            <h1 class="animate__animated animate__backInDown">Bienvenido al Museo de los Videojuegos</h1>
-            
+            <h1 class="animate__animated animate__backInDown">Bienvenido al
+                Museo de los Videojuegos</h1>
+
             <div class="centerButton">
                 <a href="#anchor"><button onclick="welcome()">Descubrelo</button></a>
             </div>
         </header>
-        
-        
+
+
         <div class="mainImage animate__animated animate__fadeIn">
             <img src="/img/NationalVideogameMuseum1.jpg" alt="Videogame Museum">
         </div>
-        
+
         <div>
             <a name="anchor"></a>
             <h2 id="presentationMuseum"></h2>
         </div>
-        
+
         <div id="container">
             <h3>Exposicion de Videojuegos mas caros del mundo</h3>
 
-            <h4>Haz doble click en esta imagen para descubrir el puesto numero 5</h3>
-            <section class="item-1" ondblclick="discoverTopFive()">
+            <section class="item-1 animated" ondblclick="discoverTopFive()">
                 <img src="img/cartaIcon1.png" id="topFive" alt="Videogame
                     top 5">
             </section>
-            <p id="descriptionTopFive"></p>
+                <h4>Haz doble click en esta imagen para descubrir el puesto
+                    numero 5</h4>
 
 
-            <h4>Mueve la frase "Top 4!" de un recuadro al otro para descubrir
-                el puesto numero 4</h4>
-            <section class="item-2">
+            <section class="item-2 animated">
                 <img src="img/cartaIcon1.png" id="topFour" alt="Videogame
                     top 4">
             </section>
@@ -58,36 +57,38 @@
             </div>
             <div class="droptarget" ondrop="drop(event)"
                 ondragover="allowDrop(event)"></div>
-            <p id="demo"></p>
+            <h4>Mueve la frase "Top 4!" de un recuadro al otro para descubrir
+                el puesto numero 4</h4>
 
 
-            <h4>Haz click a la barra y mantén presionada cualquier tecla para descubrir el puesto numero 3</h4>
-            <section class="item-3">
+            <section class="item-3 animated">
                 <img src="img/cartaIcon1.png" id="topThree" alt="Videogame
                     top 3">
             </section>
+            <h4>Haz click a la barra y mantén presionada cualquier tecla para
+                descubrir el puesto numero 3</h4>
             <input type="text" class="inputTextEvent"
                 onkeydown="discoverTopThree(this)">
 
 
-            <h4>Escribe cualquier cosa en la barra para descubrir el puesto
-                numero 2</h4>
-            <section class="item-4">
+            <section class="item-4 animated">
                 <img src="img/cartaIcon1.png" id="topTwo" alt="Videogame
                     top 2">
             </section>
+            <h4>Escribe cualquier cosa en la barra para descubrir el puesto
+                numero 2</h4>
             <input type="text" class="inputTextEvent2"
                 onkeypress="discoverTopTwo(this)">
 
 
-            <h4>Pasa el Mouse por encima de la imagen para descubrir el puesto
-                numero 1</h4>
-            <section class="item-5">
+            <section class="item-5 animated">
                 <div onmousemove="discoverTopOne()" onmouseout="clearCoor()">
-                    <img src="img/cartaIcon1.png" id="topOne"
-                        alt="Videogame top 1">
+                    <img src="img/cartaIcon1.png" id="topOne" alt="Videogame top
+                        1">
                 </div>
             </section>
+            <h4>Pasa el Mouse por encima de la imagen para descubrir el puesto numero 1.<br><br> 
+                Al finalizar haz click en la barra espaciadora</h4>
             <p id="demo3"></p>
 
         </div>
